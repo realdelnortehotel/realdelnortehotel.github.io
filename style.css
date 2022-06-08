@@ -389,7 +389,6 @@ body{
         height: auto;
     }
     .h2pool, .h2restaurant, .h2spa{
-        height: 20px;
         width: fit-content;
         transform: translate(10px, -70px);
     }
