@@ -344,6 +344,10 @@ body{
         width: 100%;
         height: 50px;
     }
+    
+    #emailinput{
+        font-size: 90%;
+    }
 
     .nav-responsive i{
         font-size: 1.5em;
