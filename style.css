@@ -1,0 +1,408 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+.nav-responsive{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    justify-content: end;
+    align-items: center;
+    background-color: #F4694C;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.nav a:hover{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.section1{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background-image: url(hotelrealfondo.jpg);
+    background-size: cover;
+}
+
+.capa{
+    background-color: #0000003f;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reservarbtn{
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #F4694C;
+    cursor: pointer;
+    color: #fff;
+}
+
+.titles{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Mukta', sans-serif;
+    font-size: 3em;
+}
+
+.p1{
+    color: #fff;
+}
+
+
+.section2{
+    margin-top: 40px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2{
+    padding: 20px;
+    align-self: center;
+    max-width: 460px;
+}
+
+.text2 h2{
+    color: #F4694C;
+    font-family: 'Playfair Display', serif;;
+}
+
+.imgs21{
+    width: 100%;
+    height: 70vh;
+    flex-basis: 100%;
+}
+
+.imgs22{
+    width: 100%;
+    height: 70vh;
+    flex-basis: 100%;
+}
+
+
+.imgs21 img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.imgs22 img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%; 
+}
+
+.text3{
+    text-align: center;
+}
+
+.rooms{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+
+.rom1, .rom2, .rom3{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+    background-color: rgb(245, 245, 245);
+    min-width: 200px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.rooms img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-start-start-radius: 15px;
+    border-start-end-radius: 15px;
+}
+
+.padin{
+    padding: 5px;
+}
+
+.precios{
+    width: 50%;
+    background-color: #F4694C;
+    color: #fff;
+    border-radius: 3px;
+    align-self: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.text3 h2{
+    font-family: 'Playfair Display', serif;
+}
+
+.section4{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4 div{
+    margin: 50px;
+}
+
+.piscina, .restaurante, .spa{
+    width: 50%;
+    height: auto;
+}
+
+.piscina img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurante img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.h2pool, .h2restaurant, .h2spa{
+    background-color: #F4694C;
+    text-align: center;
+    width: 30vw;
+    height: 70px;
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    transform: translate(70px, -80px);
+}
+
+.text4{
+    text-align: center;
+}
+
+.text4 h2{
+    color: #F4694C;
+    font-family: 'Playfair Display', serif;
+}
+
+.section5{
+    background-image: url(panoramahotelreal.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin-top: 80px;
+}
+
+.capa5{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100%;
+}
+
+.capa5 a{
+    text-decoration: none;
+    padding: 3px;
+    color: #fff;
+}
+
+#reservar5{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    height: 15%;
+    width: 10%;
+    border-radius: 10px;
+}
+
+.section6{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titles6{
+    flex-basis: 40%;
+}
+
+.titles6 p{
+    max-width: 350px;
+}
+
+.enlaces6{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces6 a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    margin: 7px;
+}
+
+.media6{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.media6 a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    margin: 7px;
+}
+
+.footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F4694C;
+    color: #fff;
+    height: 70px;
+}
+
+.mediafooter a i{
+    padding: 10px;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.animacion {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all .6s ease-in-out;
+}
+
+.visible{
+    opacity: 1;
+    transform: scale(1);
+    transition: all .8s ease-in-out;
+}
+
+@media screen and (max-width: 750px) {
+    .nav-responsive{
+        display: flex;
+        flex-direction: row;
+        background-color: #F4694C;
+        color: #fff;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        z-index: 300;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-responsive i{
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+
+    .nav{
+        position: fixed;
+        flex-direction: column;
+        height: fit-content;
+        background-color: #f4684cc9;
+        top: -700px;
+        transition: all .5s ease;
+    }
+
+    .nav a{
+        border-bottom: 2px solid #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav a:hover{
+        border: none;
+        background-color: #F4694C;
+    }
+
+    .imgs21, .imgs22{
+        display: none;
+    }
+
+    .rom1, .rom2, .rom3{
+        margin-bottom: 20px;
+        height: 400px;
+    }
+    .section4 div{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .piscina, .restaurante, .spa {
+        width: 100%;
+        height: auto;
+    }
+    .h2pool, .h2restaurant, .h2spa{
+        height: 20px;
+        width: fit-content;
+        transform: translate(10px, -70px);
+    }
+
+    #reservar5{
+        width: 100px;
+    }
+
+    .footer{
+        height: fit-content;
+    }
+    .titles {
+        font-size: 2em;
+        text-align: center;
+    }
+}

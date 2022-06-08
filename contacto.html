@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web del Hotel Real del Norte, informacíon y resarvaciones">
+    <meta name="keywords" content="hotel, hotel barranquilla, hotel real, hotel real del norte, hotel mar, hotel vacaciones">
+    <meta name="author" content="Angel David Luna Ospina">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecontact.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/alertify.css">
+    <link rel="stylesheet" href="css/themes/default.css">
+    <link rel="icon" href="icon.ico">
+    <script src="https://kit.fontawesome.com/dc5ebd091c.js" crossorigin="anonymous"></script>
+    <title>Hotel Real del Norte</title>
+</head>
+<body>
+    <div class="nav-responsive">
+        <h2>Hotel Real del Norte</h2>
+        <i class="fa-solid fa-bars" id="responsive"></i>
+    </div>
+    <div class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="index.html">Sobre nosotros</a>
+        <a href="index.html">Habitaciones</a>
+        <a href="index.html">Servicios</a>
+        <a href="index.html">Contáctanos</a>
+        <a href="index.html">RESERVA AHORA</a>
+    </div>
+    <div id="map"></div>
+    <div class="contact">
+        <div class="contactText">
+            <p>¡Tenemos asesores listos para atenderte!</p>
+            <div class="ubiIcon"> 
+                <a href="https://www.google.com/maps/place/Punta+Roca/@11.0245932,-74.92117,14z/data=!4m12!1m6!3m5!1s0x0:0x3e2f2be1251d2389!2sSalgar+PLAYA!8m2!3d11.0208822!4d-74.93327!3m4!1s0x8ef42a2cac35c415:0x76db03ab1da90220!8m2!3d11.0440945!4d-74.9211574?hl=es-419" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <span>Hotel Real del Norte</span>
+            </div>
+            <div class="celIcon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>+57 3000000000</span>
+            </div>
+            <div class="correoIcon">
+                <i class="fa-solid fa-envelope"></i>
+                <span>infohotel@realdelnorte.com</span>
+            </div>
+        </div>
+        <div class="Reservar">
+            <h2>Reserva ahora mismo o envíanos un mensaje</h2>
+            <form action="" name="formulario" class="formu" id="formulario">
+                <input type="text" placeholder="Nombre*" name="name" id="name">
+                <input type="email" placeholder="Direción de correo*" name="email" id="email">
+                <input type="text" placeholder="Número de contacto">
+                <input type="text" placeholder="Cantidad de personas">
+                <div class="ingresoo">
+                    <label for="ingreso">Fecha de ingreso</label>
+                    <input type="date" id="ingreso">
+                </div>
+                <div class="salidaa">
+                    <label for="salida">Fecha de salida</label>
+                    <input type="date" id="salida">
+                </div>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="51" form="formulario" placeholder="Dejános tu mensaje"></textarea>
+            </form>
+            <input type="submit" value="enviar" id="subb">
+        </div>
+    </div>
+    <div class="section6">
+        <div class="titles6">
+            <h3>Hotel Real del Norte</h3>
+            <p>Disfruta de tus vacaciones con todo el lujo y la comodidad a un precios asequible.</p>
+        </div>
+        <div class="enlaces6">
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="index.html">Sobre nosotros</a>
+            <a href="index.html">Habitaciones</a>
+            <a href="index.html">Servicios</a>
+            <a href="">Contacto</a>
+            <a href="">Reservar</a>
+        </div>
+        <div class="media6">
+            <h4>Redes sociales</h4>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Whatsapp</a>
+            <a href="">Correo</a>
+        </div>
+    </div>
+    <div class="footer">
+        <span>©2022 Hotel Real del Norte/todos los derechos reservados.</span>
+        <div class="mediafooter">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+    <script src="maps.js"></script>
+    <script src="codecontact.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  ></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="alertify.js"></script>
+    <script>
+        var buttonResponsive = document.getElementById('responsive');
+    var menu = document.querySelector('.nav');
+    var menuDesplegado = false;
+
+    buttonResponsive.addEventListener('click', function clickk(){
+        if (menuDesplegado == false){
+            menu.style.top = '50px'
+            menuDesplegado = true;
+        }else{
+            menu.style.top = '-700px';
+            menuDesplegado = false;
+        }
+    })
+    </script>
+</body>
+</html>
